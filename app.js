@@ -351,6 +351,18 @@ const pages = {
         <div class="species-body">- 사용할 명령어<br>- 추가할 랜덤 스크립트 (최소 2개 최대 20개)</div>
       </div>
         <p>추가된 명령어는 모든 러너가 사용할 수 있음을 유의해 주세요. 불쾌감을 유발하거나, 세계관과 어울리지 않은 제안은 거절될 수 있습니다.</p>
+        <br>
+        <br>
+        <h2>명령어 목록</h2>
+      <div class="species-card">
+        <div class="species-name">자판기</div>
+        <div class="species-body">- 돈이 아닌 물물교환으로 작동하는 자판기로 물건을 넣으면 물건이 나옵니다.<br>- 자판기에 넣을 물건은 스토리계를 태그하여 구매하거나 훔치는 역극을 통해 습득할 수 있습니다.<br>- 커뮤니티 러너가 자판기에 넣은 물건을 다른 커뮤니티 러너가 입수할 수 있습니다.<br>명령어 : <b>[자판기/투입할 물건]</b></div>
+        <div class="species-ref">사용 예시: [자판기/볼펜 한 자루]</div>
+      </div>
+      <div class="species-card">
+        <div class="species-name">가위바위보 / 홀짝</div>
+        <div class="species-body">- 간단한 미니 게임용으로 활동 중 역극에 활용할 수 있습니다. 명령어를 입력하면 가위, 바위, 보 / 홀, 짝 중 한 가지 결과가 출력됩니다.<br>- 승패는 지정되어 있지 않습니다.<br>명령어 : <b>[가위바위보], [홀짝]</b></div>
+      </div>
      </div>
  `,
 
