@@ -229,7 +229,7 @@ const pages = {
           <a href="#" class="chapter-link" data-page="system" style="text-decoration: none;">
             <span class="chapter-link-icon" style="text-decoration: none;">✒️</span>
             <span style="text-decoration: none;">
-              Club Registration Play list
+              Deadmen's Fingers Club
               <span class="chapter-link-label" style="text-decoration: none;">시스템으로 이동</span>
             </span>
           </a>
