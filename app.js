@@ -342,114 +342,17 @@ const pages = {
         <p>러닝 중 공개됩니다.</p>
         <hr>
         <h2>다이스 및 자동봇</h2>
-        <p>개장 후 공개됩니다.</p>
+        <p>ⓐ 모든 명령어는 다이스봇(@Dicebot)을 태그하여 사용합니다. 반드시 대괄호([])가 포함되어야 작동합니다. 만일 사용 중 이상이 있다면 총괄계 DM으로 연락 주세요.</p>
+        <p>ⓑ 모든 명령어는 역극 및 스토리 진행 중 자유롭게 사용할 수 있습니다.</p>
+        <p>ⓒ 명령어 및 스크립트 추가 가능 : 별도의 코딩이 필요하지 않은 단순한 랜덤 스크립트 출력 명령어 추가를 지원합니다. 활동 중 캐릭터 어필 등의 용도로 추가가 필요한 명령어가 있다면 아래 양식을 지켜 총괄계 DM으로 문의 바랍니다. 기존 명령어에 새로운 스크립트를 추가하는 것 역시 가능합니다.</p>
+    <div class="species-grid">
+      <div class="species-card">
+        <div class="species-name">신청 양식</div>
+        <div class="species-body">- 사용할 명령어<br>- 추가할 랜덤 스크립트 (최소 2개 최대 20개)</div>
+      </div>
+        <p>추가된 명령어는 모든 러너가 사용할 수 있음을 유의해 주세요. 불쾌감을 유발하거나, 세계관과 어울리지 않은 제안은 거절될 수 있습니다.</p>
      </div>
  `,
-   
-  // ── 신청서 양식 ──────────────────────────────────────────
-  application: () => `
-    <div class="app-page">
-      <h1>신청서 양식</h1>
-
-      <p class="app-info">
-        제출 기간: 2026.04.19 00시 00분 ~ 2026.04.25 23시 59분<br>
-        신청서는 구글폼으로 접수 받습니다.<br>
-        수정은 최대 2회 가능하며, 수정 신청서 또한 구글폼으로 제출 부탁드립니다.<br>
-        신청서 제목은 [ 캐릭터 이름｜나이｜기숙사｜별종 ] 로 통일합니다.<br>
-        파란색 글씨는 신청서 제출 전 모두 삭제해 주세요.
-      </p>
-
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdrEgRTgwnmGvK-1Ju5QmfsaqcfuIOxsYuZ890Cld_c1x93ng/viewform"
-         target="_blank" rel="noopener noreferrer" class="app-btn app-btn-orange" style="text-decoration: none;">
-        💌 신청서 접수하러 가기
-      </a>
-
-      <a href="https://docs.google.com/document/d/1bCQBZxYZ-t5yv_zcUneWABcZnKEgoFqq2kUd_bv0XA8/copy?usp=sharing"
-         target="_blank" rel="noopener noreferrer" class="app-btn app-btn-orange" style="text-decoration: none;">
-        ✒️ 신청서 양식 사본 만들기
-      </a>
-
-      <div class="app-table-wrap">
-        <table class="app-table">
-          <thead>
-            <tr>
-              <th>수정 횟수</th>
-              <th>수정한 내용</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>&nbsp;</td>
-              <td>&nbsp;</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="hanmadi">한마디</div>
-
-      <span class="field-label">[외관]</span>
-      <p class="field-body">AI를 제외한 모든 형태의 이미지 임관 첨부를 허용합니다. 이미지 첨부는 필수가 아니며, 인장으로 사용하지 않는다면 그림 이미지 또한 해당 란에 첨부 가능합니다.</p>
-      <p class="field-body"><strong>공백 포함 최대 1000자 이내</strong>로 서술 부탁드립니다.</p>
-
-      <span class="field-label">[이름]</span>
-      <p class="field-body">한국어｜원어</p>
-
-      <span class="field-label">[별종]</span>
-      <p class="field-body">늑대인간, 고르곤, 뱀파이어 등.<br>
-      창작 설정의 경우 세부 설명 기입이 필수입니다.<br>
-      <strong>공백 포함 최대 1000자 이내</strong>로 부탁드립니다.</p>
-
-      <span class="field-label">[나이]</span>
-      <p class="field-body">n세<br>
-      15세~17세 사이. 이상의 스펙트럼에 해당된다면 종족에 따라 조정한 값 기입 가능.</p>
-
-      <span class="field-label">[젠더 및 기숙사]</span>
-      <p class="field-body">젠더 자유 서술. (ex. 시스젠더 여/남성, 에이젠더, 데미걸 등…….)<br>
-      오필리어 홀Ophelia Hall｜칼라반 홀Caliban Hall｜퍼크 홀Puck Hall<br>
-      해당되지 않는 항목은 삭제해 주세요. 룸메이트 배정에 사용됩니다.<br>
-      오필리어 홀: 여성 스펙트럼<br>
-      칼라반 홀: 남성 스펙트럼<br>
-      퍼크 홀: 논바이너리 젠더퀴어</p>
-
-      <span class="field-label">[신장/체중]</span>
-      <p class="field-body">cm｜kg<br>
-      대략적인 수치만 기입해도 괜찮습니다.<br>
-      몸무게의 경우, 평균 또는 마름 등의 서술이 가능합니다.</p>
-
-      <span class="field-label">[성격]</span>
-      <p class="field-body">최소 3개의 키워드를 작성해 주세요.<br>
-      키워드 제외 공백 포함 최대 1000자 이내로 서술 부탁드립니다.</p>
-
-      <span class="field-label">[기타]</span>
-      <p class="field-body">출신 국가, 나비난초회 가입 계기, ‘소원을 들어주는 의식’에 참여한 이유, 호불호, 취미, 특기 등 글자 수 제한 없이 편하게 서술 부탁드립니다.<br>
-      1967년 무렵 미국 거주가 가능하며 영어로 소통이 가능할 경우 자유로운 국적 설정이 가능합니다.</p>
-
-      <span class="field-label">[텍스트 관계]</span>
-      <p class="field-body">합격자 발표 후 커뮤니티 개장까지 생성 가능합니다.</p>
-
-      <hr class="app-divider">
-
-      <h2>비공개 프로필</h2>
-
-      <span class="field-label">[비밀 설정]</span>
-      <p class="field-body">비밀 설정의 유무는 합격에 영향을 주지 않습니다.</p>
-
-      <span class="field-label">[러닝IF]</span>
-      <p class="field-body">간단히 작성하셔도 합격에 영향을 주지 않습니다.<br>
-      ex) 친구들에게 죽기 직전까지 맞고 싶어요.</p>
-
-      <span class="field-label">[오너 계정]</span>
-      <p class="field-body">실제 사용하고 계신 아이디를 작성해 주세요.</p>
-
-      <span class="field-label">[성인인증]</span>
-      <p class="field-body">아래 첨부된 링크 도서의 ISBN 마지막 4자리를 기입해 주세요.</p>
-      <a href="https://ridibooks.com/books/2284000005?_s=search&amp;_q=%EB%B6%88%EC%9A%B0%ED%95%9C+%EC%82%B6&amp;_rdt_sid=SearchBookListWithTab"
-         target="_blank" rel="noopener noreferrer" class="app-btn" style="text-decoration: none;">
-        📖 도서링크
-      </a>
-    </div>
-  `,
 
   // ── QNA ─────────────────────────────────────────────────
   qna: () => {
