@@ -226,11 +226,11 @@ const pages = {
               <span class="chapter-link-label" style="text-decoration: none;">세계관으로 이동</span>
             </span>
           </a>
-          <a href="#" class="chapter-link" data-page="application" style="text-decoration: none;">
+          <a href="#" class="chapter-link" data-page="system" style="text-decoration: none;">
             <span class="chapter-link-icon" style="text-decoration: none;">✒️</span>
             <span style="text-decoration: none;">
-              Club Registration Form
-              <span class="chapter-link-label" style="text-decoration: none;">신청서 양식으로 이동</span>
+              Club Registration Play list
+              <span class="chapter-link-label" style="text-decoration: none;">시스템으로 이동</span>
             </span>
           </a>
         </div>
